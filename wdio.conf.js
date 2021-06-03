@@ -1,7 +1,7 @@
 exports.config = {
     runner: 'local',
     specs: [
-        './test/specs/**/*.js'
+        './dist/test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [

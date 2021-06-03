@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "lib": ["dom", "ES2020"],
+      "target": "ES2020",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": false,
+      "noImplicitReturns": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "declaration": true,
+      "allowJs": false,
+      "baseUrl": "./test",
+      "outDir": "./dist",
+      "types": ["node", "webdriverio/async", "@wdio/mocha-framework"]
+    },
+    "compileOnSave": true
+  }
+  
