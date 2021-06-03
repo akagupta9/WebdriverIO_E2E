@@ -1,4 +1,4 @@
-import { SignUp } from "../pages/SignUp";
+import { SignUp } from '../../index';
 import { expect as chaiExpect} from 'chai';
 import allureReporter from '@wdio/allure-reporter'
 

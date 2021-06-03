@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cache-clean": "npm cache clean --force",
-    "compile": "tsc",
-    "test": "npx wdio ./wdio.conf.js"
+    "clean": "gulp clean:dist",
+    "copy-resource":"gulp copy:resource",
+    "test": "npx wdio ./wdio.conf.js",
+    "generate-report":"allure generate --clean allure-results"
   },
   "author": "Akanksha Gupta",
   "license": "",

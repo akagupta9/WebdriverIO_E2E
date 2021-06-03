@@ -1,4 +1,4 @@
-import { Page } from "./BasePage";
+import { Page } from '../../index';
 
 export class SignUp extends Page{
 
