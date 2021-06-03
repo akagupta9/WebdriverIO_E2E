@@ -1,7 +1,7 @@
 {
-  "name": "vedantu_lms",
+  "name": "webdriverio_learning",
   "version": "1.0.0",
-  "description": "Vedantu LMS Automation",
+  "description": "Learning Webdriver Io",
   "main": "index.js",
   "scripts": {
     "cache-clean": "npm cache clean --force",
@@ -27,5 +27,8 @@
     "tslint": "^5.12.1",
     "typescript": "^3.3.3",
     "wdio-chromedriver-service": "^7.1.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
   }
 }

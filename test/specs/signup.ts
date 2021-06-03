@@ -6,7 +6,7 @@ let signUp : SignUp = new SignUp();
 describe('Sign UP Feature', () => {
 
   beforeEach(async ()=>{
-    await browser.url("https://www.heroku.com/");
+    await signUp.open("https://www.heroku.com/");
   })
   
     it('Validate URL title',  async () => {

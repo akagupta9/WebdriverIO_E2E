@@ -1,4 +1,6 @@
-export class SignUp {
+import { Page } from "./BasePage";
+
+export class SignUp extends Page{
 
      private signUpButton = "//a[text()='Sign up']";
      private formPage = "//form[contains(@class,'signup-form')]";
@@ -6,6 +8,10 @@ export class SignUp {
      private dropDownSelectors = "//select[@placeholder='##PLACEHOLDER##']";
      private captchaCheckbox = "//div[@class='recaptcha-checkbox-spinner']";
      private createAccountButton = "//input[@type='submit' and @value='Create Free Account']";
+
+     async getForm(){
+         return $(this.formPage);
+     }
 
     async setInputField(placeHolderName , valueToSet){
         let inputFiled = await $(this.formInputField.replace(/##PLACEHOLDER##/g, placeHolderName));
