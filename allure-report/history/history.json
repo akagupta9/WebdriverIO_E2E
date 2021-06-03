@@ -1,0 +1,60 @@
+{
+  "2a3a0d242b65436f72e5d02feb62d0e2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "46f3f8c31b04e498",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622712868064,
+        "stop" : 1622712878930,
+        "duration" : 10866
+      }
+    } ]
+  },
+  "dc9c5938f632400300951cc4838884dd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2cfac7432e81ded2",
+      "status" : "broken",
+      "statusDetails" : "Can't call click on element with selector \"//a[text()='Sign up']\" because element wasn't found",
+      "time" : {
+        "start" : 1622712878930,
+        "stop" : 1622712889420,
+        "duration" : 10490
+      }
+    } ]
+  },
+  "7530da593557def51454c5489898c777" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5db9ce512a6a359",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622712847823,
+        "stop" : 1622712868063,
+        "duration" : 20240
+      }
+    } ]
+  }
+}

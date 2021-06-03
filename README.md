@@ -6,3 +6,7 @@ Plugins Used for VS Code -
 1. Intellij
 2. Mocha Test Snippet
 3. Mocha Test Explorer
+
+
+Running particular Package -
+wdio wdio.conf.js --suite signUp

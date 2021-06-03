@@ -1,0 +1,48 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Sign UP Feature",
+    "children" : [ {
+      "name" : "Validate URL title",
+      "uid" : "5db9ce512a6a359",
+      "parentUid" : "2b2a4a1303cd0f6ce024923ecc4866e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622712847823,
+        "stop" : 1622712868063,
+        "duration" : 20240
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.212" ]
+    }, {
+      "name" : "Validate Signup Page",
+      "uid" : "46f3f8c31b04e498",
+      "parentUid" : "2b2a4a1303cd0f6ce024923ecc4866e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622712868064,
+        "stop" : 1622712878930,
+        "duration" : 10866
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.212" ]
+    }, {
+      "name" : "Perform Signup Page Operation",
+      "uid" : "2cfac7432e81ded2",
+      "parentUid" : "2b2a4a1303cd0f6ce024923ecc4866e1",
+      "status" : "broken",
+      "time" : {
+        "start" : 1622712878930,
+        "stop" : 1622712889420,
+        "duration" : 10490
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.212" ]
+    } ],
+    "uid" : "2b2a4a1303cd0f6ce024923ecc4866e1"
+  } ],
+  "name" : "suites"
+}

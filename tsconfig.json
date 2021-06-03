@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
-      "lib": ["dom", "ES2020"],
-      "target": "ES2020",
+      "target": "es6",
       "module": "commonjs",
       "moduleResolution": "node",
       "noImplicitAny": false,
@@ -13,7 +12,9 @@
       "baseUrl": "./test",
       "outDir": "./dist",
       "types": ["node", "webdriverio/async", "@wdio/mocha-framework"]
+      
     },
-    "compileOnSave": true
+    "compileOnSave": true,
+
   }
   

@@ -1,22 +1,24 @@
 import { SignUp } from "../pages/SignUp";
 import { expect as chaiExpect} from 'chai';
+import allureReporter from '@wdio/allure-reporter'
 
 let signUp : SignUp = new SignUp();
 
 describe('Sign UP Feature', () => {
 
-  beforeEach(async ()=>{
-    await signUp.open("https://www.heroku.com/");
+  before(async ()=>{
+    await signUp.open("/");
   })
   
     it('Validate URL title',  async () => {
+      allureReporter.addFeature('Sign UP Feature')
       let actualTitle : string = await browser.getTitle();
       chaiExpect(actualTitle).to.be.equal("Cloud Application Platform | Heroku");
     })
 
    it('Validate Signup Page', async ()=>{
     await signUp.clickSignupButton();
-    let isPageDisplayed = await (await $("//h1[text()='Sign up for free and experience Heroku today']")).isDisplayed();
+    let isPageDisplayed = await (await signUp.Form).isDisplayed();
     await chaiExpect(isPageDisplayed);
    })
 

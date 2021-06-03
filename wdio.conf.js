@@ -1,5 +1,16 @@
+
+reportDirectory = "./testResults/"+new Date();
 exports.config = {
     runner: 'local',
+
+    suites: {
+        signUp: [
+            './dist/test/specs/signup.js'
+        ],
+        exploreTs: [
+            './dist/test/specs/exploreTs.js'
+        ]
+    },
     specs: [
         './dist/test/specs/**/*.js'
     ],
@@ -18,7 +29,7 @@ exports.config = {
     
     bail: 0,
     
-    baseUrl: 'http://localhost',
+    baseUrl: 'https://www.heroku.com',
     
     waitforTimeout: 10000,
    
@@ -27,13 +38,35 @@ exports.config = {
     connectionRetryCount: 3,
     
     services: ['chromedriver'],
+
+    // services: [
+    //     ['selenium-standalone', { drivers: { chrome: true, safari: 'latest'} }]
+    // ],
    
     framework: 'mocha',
    
-    reporters: ['spec'],
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }]],
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
+    },
+
+    onPrepare: async (config, capabilities) =>{
+
+    },
+
+    beforeTest: async (test, context) => {
+        await browser.maximizeWindow();
+    },
+
+    afterTest: async(test, context, { error, result, duration, passed, retries }) =>{
+        TODO
+        // await browser.takeScreenshot();
+       
     },
    
 }

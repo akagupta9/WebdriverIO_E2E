@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622712847823' stop='1622712889420'>
+    <name>Sign UP Feature</name>
+    <title>Sign UP Feature</title>
+    <test-cases>
+        <test-case start='1622712847823' status='passed' stop='1622712868063'>
+            <name>Validate URL title</name>
+            <title>Validate URL title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Sign UP Feature'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1622712868064' status='passed' stop='1622712878930'>
+            <name>Validate Signup Page</name>
+            <title>Validate Signup Page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1622712878930' status='broken' stop='1622712889420'>
+            <name>Perform Signup Page Operation</name>
+            <title>Perform Signup Page Operation</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "//a[text()='Sign up']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//a[text()='Sign up']" because element wasn't found
+                    at Object.implicitWait [as default] (/Users/akankshagupta/Learnings/Automation/WebdriverIO_E2E/node_modules/webdriverio/build/utils/implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (/Users/akankshagupta/Learnings/Automation/WebdriverIO_E2E/node_modules/webdriverio/build/middlewares.js:19:29)
+                    at Element.wrapCommandFn (/Users/akankshagupta/Learnings/Automation/WebdriverIO_E2E/node_modules/@wdio/utils/build/shim.js:78:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

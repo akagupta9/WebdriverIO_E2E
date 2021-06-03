@@ -9,7 +9,7 @@ export class SignUp extends Page{
      private captchaCheckbox = "//div[@class='recaptcha-checkbox-spinner']";
      private createAccountButton = "//input[@type='submit' and @value='Create Free Account']";
 
-     async getForm(){
+    get Form(){
          return $(this.formPage);
      }
 
@@ -24,8 +24,10 @@ export class SignUp extends Page{
     }
 
     async doVerifyIAmNotRobot(){
+
+        //TODO
         await (await $(this.captchaCheckbox)).click();
-        await browser.pause(10000);
+       // await browser.pause(10000);
     }
 
     async clickSignupButton(){
