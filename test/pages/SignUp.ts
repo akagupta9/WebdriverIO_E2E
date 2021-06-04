@@ -1,6 +1,6 @@
-import { Page } from '../../index';
 
-export class SignUp extends Page{
+
+export class SignUp {
 
      private signUpButton = "//a[text()='Sign up']";
      private formPage = "//form[contains(@class,'signup-form')]";
@@ -8,6 +8,11 @@ export class SignUp extends Page{
      private dropDownSelectors = "//select[@placeholder='##PLACEHOLDER##']";
      private captchaCheckbox = "//div[@class='recaptcha-checkbox-spinner']";
      private createAccountButton = "//input[@type='submit' and @value='Create Free Account']";
+
+     async open(url: string){
+        await browser.url(url);
+        await browser.maximizeWindow();
+    }
 
     get Form(){
          return $(this.formPage);

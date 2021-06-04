@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Jun 03 15:04:28 IST 2021","Thu Jun 03 15:04:38 IST 2021","10866","","Sign UP Feature","","Sign UP Feature","Validate Signup Page","Validate Signup Page",""
-"passed","Thu Jun 03 15:04:07 IST 2021","Thu Jun 03 15:04:28 IST 2021","20240","","Sign UP Feature","","Sign UP Feature","Validate URL title","Validate URL title",""
-"broken","Thu Jun 03 15:04:38 IST 2021","Thu Jun 03 15:04:49 IST 2021","10490","","Sign UP Feature","","Sign UP Feature","Perform Signup Page Operation","Perform Signup Page Operation",""

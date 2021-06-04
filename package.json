@@ -6,9 +6,9 @@
   "scripts": {
     "cache-clean": "npm cache clean --force",
     "clean": "gulp clean:dist",
-    "copy-resource":"gulp copy:resource",
+    "copy-resource": "gulp copy:resource",
     "test": "npx wdio ./wdio.conf.js",
-    "generate-report":"allure generate --clean allure-results"
+    "generate-report": "allure generate --clean allure-results"
   },
   "author": "Akanksha Gupta",
   "license": "",
