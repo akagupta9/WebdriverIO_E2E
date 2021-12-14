@@ -7,6 +7,8 @@ Plugins Used for VS Code -
 2. Mocha Test Snippet
 3. Mocha Test Explorer
 
-
 Running particular Package -
 wdio wdio.conf.js --suite signUp
+
+## New Content
+Added new content to the Readme file.
